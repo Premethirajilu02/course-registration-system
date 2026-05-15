@@ -3,12 +3,6 @@ pipeline {
 
     stages {
 
-        stage('Checkout Code') {
-            steps {
-                git 'https://github.com/Premethirajilu02/course-registration-system.git'
-            }
-        }
-
         stage('Build Backend') {
             steps {
                 dir('backend') {
