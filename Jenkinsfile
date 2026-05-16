@@ -7,12 +7,6 @@ pipeline {
 
     stages {
 
-        stage('Checkout') {
-            steps {
-                git 'https://github.com/Premethirajilu02/course-registration-system.git'
-            }
-        }
-
         stage('Build Spring Boot') {
             steps {
                 sh 'mvn clean package -DskipTests'
